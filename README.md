@@ -1,2 +1,31 @@
-# ML
-Machine Learning methods
+Description
+Reduce the time a Mercedes-Benz spends on the test bench.
+Problem Statement Scenario:
+Since the first automobile, the Benz Patent Motor Car in 1886, Mercedes-Benz has stood for important automotive innovations. These include the passenger safety cell with a crumple zone, the airbag, and intelligent assistance systems. Mercedes-Benz applies for nearly 2000 patents per year, making the brand the European leader among premium carmakers. Mercedes-Benz is the leader in the premium car industry. With a huge selection of features and options, customers can choose the customized Mercedes-Benz of their dreams.
+To ensure the safety and reliability of every unique car configuration before they hit the road, the company’s engineers have developed a robust testing system. As one of the world’s biggest manufacturers of premium cars, safety and efficiency are paramount on Mercedes-Benz’s production lines. However, optimizing the speed of their testing system for many possible feature combinations is complex and time-consuming without a powerful algorithmic approach.
+You are required to reduce the time that cars spend on the test bench. Others will work with a dataset representing different permutations of features in a Mercedes-Benz car to predict the time it takes to pass testing. Optimal algorithms will contribute to faster testing, resulting in lower carbon dioxide emissions without reducing Mercedes-Benz’s standards.
+Following actions should be performed:
+•	If for any column(s), the variance is equal to zero, then you need to remove those variable(s).
+•	Check for null and unique values for test and train sets.
+•	Apply label encoder.
+•	Perform dimensionality reduction.
+•	Predict your test_df values using XGBoost.
+
+
+
+To start with this problem statement we followed below steps.
+1.	Import required libraries.
+2.	Import data in test and train dataset
+3.	Check shape , info and head and observed that there is 1 column less in test dataset
+4.	Identified that column and added in test dataset
+5.	Removed columns where variance is equal to 0 
+6.	After removal identified test and train dataset contains mismatching columns/ feature
+7.	Hence identified common features between 2 datasets and kept those features in both the dataset
+8.	Checked null and unique values from test and train sets
+9.	Apply label encoder for non numeric values on both dataset to convert non numeric to numeric values
+10.	Split dataset on dependent (y) and independent variables (X)
+11.	Applied Dimension reduction using PCA
+12.	Predicted values using XGBoost
+
+
+
